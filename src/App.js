@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{Suspense} from 'react'
+import routes from './config/routes'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+      <Suspense fallback='...Loading please wait...'>
+          <Switch>
+            {Object.keys(routes).map(routeKey => (
+              <Route key={routeKey} {...routes[routeKey]} />
+            ))}
+          </Switch>
+        </Suspense>
+      </Router>
+    </>
   );
 }
 
