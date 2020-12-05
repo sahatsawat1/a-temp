@@ -6,13 +6,26 @@ export const Nav = styled.nav`
     height: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.5rem;
     z-index: 10;
     background-color: whitesmoke;
+    color: black;
+
+    a {
+      height: 30px;
+    }
+`
+
+export const NavLogo = styled(Link)`
+    font-size: 30px;
+    padding: 5px;
+    background-color: gray;
+    height: 100%;
+    margin-left: 24px;
 `
 
 export const NavLink = styled(Link)`
-    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -21,14 +34,7 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 
     &.active {
-      color: black;
-    }
-
-    h1 {
-    font-size: 30px;
-    margin: 10px;
-    padding: 5px;
-    background-color: gray;
+      border-bottom: 3px solid orange;
     }
 `
 export const Bars = styled(FaBars)`
