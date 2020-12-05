@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import NavBar from '../components/NavBar'
-import { Link } from 'react-router-dom'
 
-const Body = styled.div`
-    width: 100%;
+const Box = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 `
 
-function Home() {
+const Home = () => {
     return (
-        <Body>
-            <NavBar />
-            <h1>Test</h1>
-        </Body>
+        <Box>
+            <h1>Home</h1>
+        </Box>
     )
 }
 
