@@ -1,13 +1,13 @@
-import {CURRENTLY} from '../constants/temporature'
+import {CURRENTLY} from '../constants/Temporature'
 
 const initialState = {
-    count : 0 
+    currentTemporature : 0 
 }
 
 export default (state = initialState, action) => {
     switch (action.type) {
         case CURRENTLY :
-            return {...state , count: state.count}
+            return {...state , currentTemporature: state.currentTemporature}
         default :
             return state
     }
