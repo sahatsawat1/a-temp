@@ -34,7 +34,7 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 
     &.active {
-      border-bottom: 3px solid orange;
+      border-bottom: 5px solid #CFE7F7;
     }
 `
 export const Bars = styled(FaBars)`
