@@ -1,20 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
-import Footer from '../components/Footer'
+import List from '../components/List'
+import Graph from '../components/Graph'
+import Ranking from '../components/Ranking'
 
-const Box = styled.div`
+const Title = styled.div`
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 90vh;
+    background-color: #CFE7F7;
+    color: #fff;
+    h1{
+        font-size: 100px;
+        font-weight: bold;
+        margin-left: 15%;
+    }
 `
 
 const Home = () => {
     return (
         <>
-        <Box>
-            <h1>Home</h1>
-        </Box>
+            <Title>
+                <h1>ATEMP</h1>
+            </Title>
+            <List />
+            <Graph />
+            <Ranking />
         </>
     )
 }
