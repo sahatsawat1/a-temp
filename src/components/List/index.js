@@ -1,5 +1,9 @@
 import React from 'react'
 import { ListTemp, ListComponents, CompoLeft, CompoRight, RealTime, BoxRealTime, RTDetails } from './ListElements'
+import DisplayMaxTemporature from '../../services/DisplayMaxTemporature'
+import DisplayMinTemporature from '../../services/DisplayMinTemporature'
+import DisplayAvgTemporature from '../../services/DisplayAvgTemporature'
+
 
 const List = () => {
     return (
@@ -10,8 +14,7 @@ const List = () => {
                         <h1>Max</h1>
                     </CompoLeft>
                     <CompoRight>
-                        <h1>70 C</h1>
-                        <p>Chiang Mai</p>
+                        <DisplayMaxTemporature />
                     </CompoRight>
                 </ListComponents>
                 <ListComponents>
@@ -19,8 +22,7 @@ const List = () => {
                         <h1>Min</h1>
                     </CompoLeft>
                     <CompoRight>
-                        <h1>70 C</h1>
-                        <p>Chiang Mai</p>
+                        <DisplayMinTemporature />
                     </CompoRight>
                 </ListComponents>
                 <ListComponents>
@@ -28,8 +30,7 @@ const List = () => {
                         <h1>Average</h1>
                     </CompoLeft>
                     <CompoRight>
-                        <h1>70 C</h1>
-                        <p>Chiang Mai</p>
+                        <DisplayAvgTemporature />
                     </CompoRight>
                 </ListComponents>
             </ListTemp>
