@@ -3,7 +3,7 @@ import { Nav, NavLogo, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavB
 
 const Navbar = () => {
     return (
-        <div>
+        <>
             <Nav>
                 <NavLogo to="/">
                     <h1>LOGO</h1>
@@ -27,7 +27,7 @@ const Navbar = () => {
                         <NavBtnLink to="/signin">Sign In</NavBtnLink>
                     </NavBtn> */}
             </Nav>
-        </div>
+        </>
     )
 }
 

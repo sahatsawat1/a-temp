@@ -13,6 +13,8 @@ const GlobalStyle = createGlobalStyle`
    /* font-size: 20px; */
 
    scroll-behavior: smooth;
+   background-color: whitesmoke;
+   box-sizing: border-box;
  }
 
  a {
