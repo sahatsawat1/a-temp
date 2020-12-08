@@ -1,16 +1,22 @@
 import React from 'react'
 import {useSelector} from 'react-redux'
+import styled from 'styled-components'
+
+const Max = styled.div`
+  font-size: 25px;
+  font-weight: bold;
+`
 
 function DisplayMvgTemporature() {
   const maxTemporature = useSelector(state => state.maxTemporature)
   return (
     <>
-      <div>
+      <Max>
         {maxTemporature.temporature}
-      </div>    
-      <div>
+      </Max>    
+      <Max>
         {maxTemporature.location}
-      </div>
+      </Max>
     </>
 
   )
