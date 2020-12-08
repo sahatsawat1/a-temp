@@ -7,7 +7,7 @@ const Ranking = () => {
         <RankingComponents>
             <h1>RANKING</h1>
             <RankingDetails>
-
+                
             </RankingDetails>
         </RankingComponents>
     )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ListTemp, ListComponents, CompoLeft, CompoRight, RealTime, BoxRealTime, RTDetails } from './ListElements'
+import { ListTemp, ListComponents, CompoLeft, CompoRight, RealTime, BoxRealTime, RTDetails, Top, Bottom } from './ListElements'
 import DisplayMaxTemporature from '../../services/DisplayMaxTemporature'
 import DisplayMinTemporature from '../../services/DisplayMinTemporature'
 import DisplayAvgTemporature from '../../services/DisplayAvgTemporature'
@@ -36,7 +36,13 @@ const List = () => {
             </ListTemp>
             <BoxRealTime>
                 <RTDetails>
-
+                    <Top>
+                        <h2>NOW</h2>
+                    </Top>
+                    <Bottom>
+                        <h1>14 C</h1>
+                        <p>Chiang Mai</p>
+                    </Bottom>
                 </RTDetails>
             </BoxRealTime>
         </RealTime>
