@@ -1,7 +1,7 @@
 name: Artisan Playground [master]
 on:
   push:
-    branches: [master]
+    branches: [main]
 env:
   PROJECT_ID: artisan-playground
   RUN_REGION: asia-southeast1
