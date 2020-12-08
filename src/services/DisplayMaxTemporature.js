@@ -1,7 +1,7 @@
 import React from 'react'
 import {useSelector} from 'react-redux'
 
-function CurrentlyTemporature() {
+function DisplayMvgTemporature() {
   const maxTemporature = useSelector(state => state.maxTemporature)
   return (
     <>
@@ -16,4 +16,4 @@ function CurrentlyTemporature() {
   )
 }
 
-export default CurrentlyTemporature;
+export default DisplayMvgTemporature;
