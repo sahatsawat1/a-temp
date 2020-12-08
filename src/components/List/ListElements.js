@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ListTemp = styled.div`
     width: 50%;
-    height: 80vh;
+    height: 70vh;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ export const ListComponents = styled.div`
     width: 300px;
     display: flex;
     flex-direction: row;
-    margin: 25px;
+    margin: 15px 0 15px 15px;
     justify-content: right;
 `
 
@@ -33,7 +33,7 @@ export const CompoLeft = styled.div`
 
 export const CompoRight = styled.div`
     background-color: #fff;
-    width: 60%;
+    width: 50%;
     height: 100px;
     border-radius: 0 30px 30px 0;
     display: flex;
@@ -62,7 +62,7 @@ export const BoxRealTime = styled.div`
 `
 
 export const RTDetails = styled.div`
-    width: 30%;
+    width: 45%;
     height:70%;
     border-radius: 50px;
     display: flex;
@@ -71,7 +71,6 @@ export const RTDetails = styled.div`
     flex-direction: column;
     font-size: 50px;
     font-weight: bold;
-    margin: 25px;
     h2{
         font-size: 40px;
         margin: 20px 0;
