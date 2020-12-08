@@ -63,7 +63,7 @@ export const BoxRealTime = styled.div`
 
 export const RTDetails = styled.div`
     width: 30%;
-    height: 50%;
+    height:70%;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@ export const Top = styled.div`
 export const Bottom = styled.div`
     background-color: #fff;
     width: 100%;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
