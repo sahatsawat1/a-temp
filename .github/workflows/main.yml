@@ -1,4 +1,4 @@
-name: Artisan Playground [master]
+name: Artisan Playground [main]
 on:
   push:
     branches: [main]
@@ -19,9 +19,6 @@ jobs:
           version: 'latest'
           service_account_key: ${{ env.SA }}
           project_id: ${{ env.PROJECT_ID }}
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
       - run: ./build.sh react-app
       - run: gcloud auth configure-docker
       - name: Local Build
