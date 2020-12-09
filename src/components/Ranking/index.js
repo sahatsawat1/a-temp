@@ -1,16 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
 import TableCard from '../layout/Table'
 import { RankingComponents, RankingDetails } from './RankingElements'
+
 
 const Ranking = () => {
     return (
         <RankingComponents>
             <h1>RANKING</h1>
             <RankingDetails>
-                <TableCard>
-                    <div className='date'>sadasdas</div>
-                    <div>xzczx</div>
-                    <div>location</div>
+                <TableCard No="NO." Location="Location" Temperature="Temperature">
                 </TableCard>
             </RankingDetails>
         </RankingComponents>

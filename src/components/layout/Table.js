@@ -75,17 +75,18 @@ const Table = styled.div`
     }
 `
 
-const TableCard = (props) => {
+
+const TableCard = ({No, Location, Temperature}) => {
     return (
         <Table>
             <div class="cell-table date">
-                {props.children}
+                {No}
             </div>
             <div class="cell-table name-header">
-                {props.children}
+                {Location}
             </div>
             <div class="cell-table farm">
-                {props.children}
+                {Temperature}
             </div>
         </Table>
     )
