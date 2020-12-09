@@ -3,17 +3,13 @@ import styled from 'styled-components'
 import List from '../components/List'
 import Graph from '../components/Graph'
 import Ranking from '../components/Ranking'
+import Banner from '../assets/banner.png'
 
 const Title = styled.div`
-    display: flex;
-    align-items: center;
-    height: 90vh;
-    background-color: #CFE7F7;
-    color: #fff;
-    h1{
-        font-size: 100px;
-        font-weight: bold;
-        margin-left: 15%;
+    width: 100%;
+    padding-top: 5vh;
+    img{
+        width: 100%;
     }
 `
 
@@ -21,7 +17,7 @@ const Home = () => {
     return (
         <>
             <Title>
-                <h1>ATEMP</h1>
+                <img src={Banner} />
             </Title>
             <List />
             <Graph />

@@ -6,22 +6,22 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavLogo to="/">
-                    <h1>LOGO</h1>
+                    {/* <h1>LOGO</h1> */}
                 </NavLogo>
                 <Bars />
                 <NavMenu>
                     <NavLink to="/MAP" activeStyle>
-                        MAP
-                        </NavLink>
+                        <a>MAP</a>
+                    </NavLink>
                     <NavLink to="/REALTIME" activeStyle>
-                        REAL TIME
+                        <a>REAL TIME</a>
                         </NavLink>
                     <NavLink to="/GRAPH" activeStyle>
-                        GRAPH
-                        </NavLink>
+                        <a>GRAPH</a>
+                    </NavLink>
                     <NavLink to="/RANKING" activeStyle>
-                        RANKING
-                        </NavLink>
+                        <a>RANKING</a>
+                    </NavLink>
                 </NavMenu>
                 {/* <NavBtn>
                         <NavBtnLink to="/signin">Sign In</NavBtnLink>
